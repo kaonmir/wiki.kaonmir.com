@@ -15,9 +15,9 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "ko-KR",
     baseUrl: "wiki.kaonmir.com",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "template", ".obsidian", "inbox"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
