@@ -11,7 +11,7 @@ const config: QuartzConfig = {
     pageTitle: "성훈의 꼬꼬무",
     pageTitleSuffix: "",
     enableSPA: true,
-    enablePopovers: true,
+    enablePopovers: false,
     analytics: {
       provider: "plausible",
     },

@@ -245,7 +245,7 @@ export function renderPage(
                     <HeaderComponent {...componentData} />
                   ))}
                 </Header>
-                <div class="popover-hint">
+                <div class="">
                   {beforeBody.map((BodyComponent) => (
                     <BodyComponent {...componentData} />
                   ))}
