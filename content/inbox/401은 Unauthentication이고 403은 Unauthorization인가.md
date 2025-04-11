@@ -1,4 +1,5 @@
 ---
-tags:
-    - #꼬꼬무
+title:
+aliases: []
+tags: []
 ---

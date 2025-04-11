@@ -1,3 +1,9 @@
+---
+title:
+aliases: []
+tags: []
+---
+
 DDoS를 방어하거나 사용자가 자주 이용하는 걸 막기 위한 방법
 
 Rate Limit 방법론 

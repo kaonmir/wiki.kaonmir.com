@@ -1,7 +1,9 @@
 ---
-alias:
-    - OSI
-    - OSI 7 계층
+title:
+aliases:
+  - OSI
+  - OSI 7 계층
+tags: []
 ---
 Open Systems Interconnection Reference Model
 
@@ -9,9 +11,7 @@ Open Systems Interconnection Reference Model
 
 ![](https://i.imgur.com/RxumF6w.png)
 
-
 #보완 계층별로 하나씩 작성
 
-
-### 추가
+**See also.**
 - [[OSI vs TCPIP|OSI vs TCP/IP]]

@@ -1,6 +1,8 @@
 ---
-alias:
+title: OSI vs TCP/IP
+aliases: 
     - OSI vs TCP/IP
+tags: 
 ---
 
 [[TCPIP 모델|TCP/IP 모델]]이 인터넷의 구조 및 프로토콜에 가장 정확하게 매핑됩니다. ([출처](https://arc.net/l/quote/rzamlruj))
