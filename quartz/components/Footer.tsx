@@ -8,9 +8,11 @@ interface Options {
 }
 
 export default ((opts?: Options) => {
-  const Footer: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const Footer: QuartzComponent = ({ fileData, displayClass, cfg }: QuartzComponentProps) => {
     const year = new Date().getFullYear()
     const links = opts?.links ?? []
+
+    const slugEncoded = fileData.relativePath ? encodeURIComponent(fileData.relativePath) : ""
     return (
       <footer class={`${displayClass ?? ""}`}>
         <p>
@@ -23,6 +25,9 @@ export default ((opts?: Options) => {
               <a href={link}>{text}</a>
             </li>
           ))}
+          <li>
+            <a href={`obsidian://open?vault=content&file=${slugEncoded}`}>Local</a>
+          </li>
         </ul>
       </footer>
     )

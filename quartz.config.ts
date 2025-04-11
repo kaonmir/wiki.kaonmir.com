@@ -17,7 +17,7 @@ const config: QuartzConfig = {
     },
     locale: "ko-KR",
     baseUrl: "wiki.kaonmir.com",
-    ignorePatterns: ["private", "template", ".obsidian", "inbox"],
+    ignorePatterns: ["private", "template", ".obsidian", "inbox", "_template.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "local",
@@ -79,7 +79,7 @@ const config: QuartzConfig = {
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
       Plugin.FolderPage(),
-      Plugin.TagPage(),
+      Plugin.TagPage({}),
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,
