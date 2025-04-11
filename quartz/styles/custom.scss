@@ -1,3 +1,21 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* Pretendard 폰트 대신 시스템 폰트를 사용합니다 */
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Pretendard Regular"),
+    url("/static/font/Pretendard-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Pretendard Bold"),
+    url("/static/font/Pretendard-Bold.woff2") format("woff2");
+}

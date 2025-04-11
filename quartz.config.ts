@@ -20,12 +20,12 @@ const config: QuartzConfig = {
     ignorePatterns: ["private", "template", ".obsidian", "inbox"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
+      fontOrigin: "local",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Pretendard",
+        body: "Pretendard",
+        code: "Pretendard",
       },
       colors: {
         lightMode: {

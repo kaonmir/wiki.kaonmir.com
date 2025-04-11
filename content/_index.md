@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: 꼬리에 꼬리를 무는 지식 창고
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+지식을 정리하는 것은 늘 어렵습니다.

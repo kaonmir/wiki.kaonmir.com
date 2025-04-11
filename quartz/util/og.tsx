@@ -5,7 +5,7 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { JSXInternal } from "preact/src/jsx"
 import { FontSpecification, getFontSpecificationName, ThemeKey } from "./theme"
 import path from "path"
-import { QUARTZ } from "./path"
+import { QUARTZ, joinSegments } from "./path"
 import { formatDate, getDate } from "../components/Date"
 import readingTime from "reading-time"
 import { i18n } from "../i18n"
@@ -60,6 +60,12 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
   const fonts: SatoriOptions["fonts"] = [
     ...headerFonts.filter((font): font is NonNullable<typeof font> => font !== null),
     ...bodyFonts.filter((font): font is NonNullable<typeof font> => font !== null),
+    {
+      name: "Pretendard",
+      data: await fs.readFile(joinSegments(QUARTZ, "static", "font", "Pretendard-Regular.otf")),
+      weight: 400,
+      style: "normal" as const,
+    },
   ]
 
   return fonts
