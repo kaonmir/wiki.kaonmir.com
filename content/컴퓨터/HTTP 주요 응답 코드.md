@@ -22,7 +22,7 @@
 | 405 Method Not Allowed | 허용되지 않은 메소드        |
 | [[409 Conflict]]       | 사용자의 요청이 서버와 충돌    |
 | 429 Too Many Requests  | [[Rate Limit]]에 걸림 |
-그러면 401은 Unauthentication이고 403은 Unauthorization인가? #보완 
+그러면 [[401은 Unauthentication이고 403은 Unauthorization인가]]?
 ### 5XX : 서버 오류
 | 응답코드                      | 설명                              |
 | ------------------------- | ------------------------------- |
