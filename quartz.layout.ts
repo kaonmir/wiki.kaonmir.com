@@ -39,7 +39,8 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    // Component.Explorer(),
+    Component.Profile(),
   ],
   right: [
     Component.ConditionalRender({
@@ -66,7 +67,8 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    // Component.Explorer(),
+    Component.Profile(),
   ],
   right: [],
 }

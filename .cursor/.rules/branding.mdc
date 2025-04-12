@@ -1,0 +1,7 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+.legacy 폴더의 Hugo 코드를 현재 tsx로 마이그레이션할거야.
+Sidebar에 Sunghun Son의 브랜딩을 하는 부분만 마이그레이션할거야.

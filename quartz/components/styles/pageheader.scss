@@ -1,0 +1,124 @@
+.page-header-container {
+  position: relative;
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    padding: 0.75rem 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0.75rem 2rem;
+  }
+
+  .page-header-logo {
+    margin-top: -4px;
+    margin-bottom: -4px;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .page-header-mobile-menu {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+
+    .page-header-menu-button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+
+      .menu-icon {
+        fill: currentColor;
+      }
+    }
+  }
+
+  .page-header-search-container {
+    display: none;
+    width: 100%;
+    margin: 0.75rem 0;
+
+    @media (min-width: 768px) {
+      display: flex;
+      width: auto;
+      margin: 0 1rem 0 0;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .page-header-search {
+    width: 100%;
+
+    .search-wrapper {
+      position: relative;
+    }
+
+    .search-label {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      background: var(--bg);
+      color: var(--text);
+
+      &:focus {
+        outline: none;
+        border-color: var(--accent);
+      }
+    }
+  }
+
+  .page-header-logo-mobile {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .avatar {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .page-header-theme-toggle {
+    margin-left: auto;
+
+    .theme-toggle-button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+
+      .theme-icon {
+        fill: var(--color-profile-color-modes-toggle-moon);
+      }
+    }
+  }
+}

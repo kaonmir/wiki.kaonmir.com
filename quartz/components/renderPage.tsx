@@ -2,6 +2,7 @@ import { render } from "preact-render-to-string"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import HeaderConstructor from "./Header"
 import BodyConstructor from "./Body"
+import PageHeader from "./PageHeader"
 import { JSResourceToScriptElement, StaticResources } from "../util/resources"
 import { FullSlug, RelativeURL, joinSegments, normalizeHastElement } from "../util/path"
 import { clone } from "../util/clone"
@@ -236,6 +237,7 @@ export function renderPage(
       <Head {...componentData} />
       <body data-slug={slug}>
         <div id="quartz-root" class="page">
+          <PageHeader {...componentData} />
           <Body {...componentData}>
             {LeftComponent}
             <div class="center">

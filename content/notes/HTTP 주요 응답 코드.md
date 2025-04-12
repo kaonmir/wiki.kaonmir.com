@@ -27,13 +27,14 @@ tags: []
 | 405 Method Not Allowed | 허용되지 않은 메소드        |
 | [[409 Conflict]]       | 사용자의 요청이 서버와 충돌    |
 | 429 Too Many Requests  | [[Rate Limit]]에 걸림 |
-그러면 [[401은 Unauthentication이고 403은 Unauthorization인가]]?
+
+- 그러면 [[401은 Unauthentication이고 403은 Unauthorization인가]]?
 ### 5xx : 서버 오류
-| 응답코드                      | 설명                              |
-| ------------------------- | ------------------------------- |
-| 500 Internal Server Error | 일반적인 서버 오류                      |
-| 502 Bad Gateway           | [[게이트웨이]]가 연결된 서버로부터 응답 잘못됨 #보완 |
-| 504 Gateway Timeout       | [[게이트웨이]]가 연결된 서버로부터 응답 없음      |
+| 응답코드                      | 설명                          |
+| ------------------------- | --------------------------- |
+| 500 Internal Server Error | 일반적인 서버 오류                  |
+| 502 Bad Gateway           | [[게이트웨이]]가 연결된 서버로부터 응답 잘못됨 |
+| 504 Gateway Timeout       | [[게이트웨이]]가 연결된 서버로부터 응답 없음  |
 
 
 
