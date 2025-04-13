@@ -22,6 +22,8 @@ interface Options {
   openLinksInNewTab: boolean
   lazyLoad: boolean
   externalLinkIcon: boolean
+  /** Whether to mark broken links with no-link class */
+  markBrokenLinks: boolean
 }
 
 const defaultOptions: Options = {
@@ -30,6 +32,7 @@ const defaultOptions: Options = {
   openLinksInNewTab: false,
   lazyLoad: false,
   externalLinkIcon: true,
+  markBrokenLinks: true,
 }
 
 export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
@@ -121,6 +124,11 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
                   const simple = simplifySlug(full)
                   outgoing.add(simple)
                   node.properties["data-slug"] = full
+
+                  // Check if the link is broken (doesn't exist in allSlugs)
+                  if (opts.markBrokenLinks && !ctx.allSlugs.includes(full)) {
+                    classes.push("no-link")
+                  }
                 }
 
                 // rewrite link internals if prettylinks is on

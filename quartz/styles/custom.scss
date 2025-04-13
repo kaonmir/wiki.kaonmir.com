@@ -47,3 +47,13 @@ ol {
   margin-top: 0.3em;
   padding-left: 25px;
 }
+
+a.no-link {
+  color: var(--link-unresolved-color);
+  opacity: var(--link-unresolved-opacity);
+  filter: var(--link-unresolved-filter);
+
+  &:hover {
+    color: var(--text-error-hover);
+  }
+}

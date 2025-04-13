@@ -93,11 +93,11 @@ a {
 
   &:hover {
     color: var(--text-accent) !important;
-    text-decoration: underline !important;
+    text-decoration: underline;
   }
 
   &.internal {
-    text-decoration: none;
+    // text-decoration: none;
     padding: 0 0.1rem;
     border-radius: 5px;
     line-height: 1.4rem;
