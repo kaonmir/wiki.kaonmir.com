@@ -29,7 +29,7 @@ export const sharedPageComponents: SharedLayout = {
     // }),
     Component.ConditionalRender({
       component: Component.RecentNotes({
-        title: "Recent notes",
+        title: "Recent Notes",
         limit: 6,
         filter: (page) => page.slug !== "index" && (page.slug?.startsWith("notes") ?? false),
         sort: sortByModifiedDate,
