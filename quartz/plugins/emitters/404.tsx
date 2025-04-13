@@ -15,7 +15,21 @@ export const NotFoundPage: QuartzEmitterPlugin = () => {
     ...sharedPageComponents,
     pageBody: Component.NotFound(),
     beforeBody: [],
-    left: [Component.Profile()],
+    left: [
+      Component.PageTitle(),
+      Component.MobileOnly(Component.Spacer()),
+      Component.Flex({
+        components: [
+          {
+            Component: Component.Search(),
+            grow: true,
+          },
+          { Component: Component.Darkmode() },
+        ],
+      }),
+      // Component.Explorer(),
+      Component.DesktopOnly(Component.Profile()),
+    ],
     right: [],
   }
 
