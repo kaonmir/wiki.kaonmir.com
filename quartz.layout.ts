@@ -6,19 +6,19 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
-    Component.Comments({
-      provider: "giscus",
-      options: {
-        // from data-repo
-        repo: "kaonmir/wiki.kaonmir.com",
-        // from data-repo-id
-        repoId: "R_kgDOOXoGJA",
-        // from data-category
-        category: "Announcements",
-        // from data-category-id
-        categoryId: "DIC_kwDOOXoGJM4CpCif",
-      },
-    }),
+    // Component.Comments({
+    //   provider: "giscus",
+    //   options: {
+    //     // from data-repo
+    //     repo: "kaonmir/wiki.kaonmir.com",
+    //     // from data-repo-id
+    //     repoId: "R_kgDOOXoGJA",
+    //     // from data-category
+    //     category: "Announcements",
+    //     // from data-category-id
+    //     categoryId: "DIC_kwDOOXoGJM4CpCif",
+    //   },
+    // }),
   ],
   footer: Component.Footer({
     links: {
