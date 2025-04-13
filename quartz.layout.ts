@@ -19,6 +19,15 @@ export const sharedPageComponents: SharedLayout = {
     //     categoryId: "DIC_kwDOOXoGJM4CpCif",
     //   },
     // }),
+    Component.ConditionalRender({
+      component: Component.RecentNotes({
+        title: "Recent writing",
+        limit: 4,
+        filter: (page) => page.slug !== "index",
+        showTags: true,
+      }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
   ],
   footer: Component.Footer({
     links: {

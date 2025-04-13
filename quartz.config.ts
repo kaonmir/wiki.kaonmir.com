@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "성훈의 꼬꼬무",
+    pageTitle: "지식의 파편",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: false,
