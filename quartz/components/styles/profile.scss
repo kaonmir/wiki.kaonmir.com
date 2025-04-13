@@ -217,15 +217,8 @@
     font-weight: 500;
     color: var(--color-fg-default);
     background: var(--color-canvas-default);
-    border: 1px solid var(--color-border-default);
     border-radius: 20px;
     transition: all 0.2s ease;
-
-    &:hover {
-      background: var(--color-accent-subtle);
-      border-color: var(--color-accent-muted);
-      color: var(--color-accent-fg);
-    }
   }
 
   .profile-experiences {
@@ -244,10 +237,6 @@
     flex-direction: column;
     border-radius: 6px;
     transition: background-color 0.2s ease;
-
-    &:hover {
-      background: var(--color-canvas-default);
-    }
   }
 
   .profile-experience-content {
@@ -260,23 +249,19 @@
   }
 
   .profile-experience-position {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--color-fg-default);
-    margin: 0 0 4px;
+    margin: 0;
   }
 
   .profile-experience-company {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     // color: var(--color-accent-fg);
     color: var(--color-fg-muted);
     text-decoration: none;
-    margin-bottom: 4px;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    margin-top: 2px;
   }
 
   .profile-experience-duration {
