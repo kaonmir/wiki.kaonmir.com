@@ -21,9 +21,19 @@ export const sharedPageComponents: SharedLayout = {
     // }),
     Component.ConditionalRender({
       component: Component.RecentNotes({
-        title: "Recent writing",
-        limit: 8,
-        filter: (page) => page.slug !== "index",
+        title: "Recent notes",
+        limit: 6,
+        filter: (page) => page.slug !== "index" && (page.slug?.startsWith("notes") ?? false),
+        showTags: true,
+      }),
+      condition: (page) => page.fileData.slug === "index",
+    }),
+    Component.ConditionalRender({
+      component: Component.RecentNotes({
+        title: "Recent Posts",
+        limit: 4,
+        filter: (page) =>
+          (page.slug?.startsWith("posts") ?? false) || (page.slug?.startsWith("series") ?? false),
         showTags: true,
       }),
       condition: (page) => page.fileData.slug === "index",
