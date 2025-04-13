@@ -3,7 +3,6 @@ title: "06. CPU 스케줄링"
 date: 2023-07-07T20:44:27+09:00
 author: Sunghun Son
 summary: 다중 프로그래밍 환경에서 우리는 CPU를 최대한 많이 이용하고 싶다. 운영체제는 CPU 자원을 회수하고 적절히 분배하는 스케줄링을 잘 해야 한다.
-keywords: ["os", "cpu scheduling", "스케줄링", "운영체제", "운영체제 스케줄링", "cpu 스케줄링"]
 tags: []
 pin: false
 math: true

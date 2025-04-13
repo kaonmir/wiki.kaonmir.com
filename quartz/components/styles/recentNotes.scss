@@ -38,15 +38,9 @@
 
     .tags {
       display: flex;
-      gap: 0.3rem;
       margin: 0;
       padding: 0;
       flex-wrap: nowrap;
-
-      a {
-        padding: 0;
-        // margin: 0;
-      }
     }
   }
 }

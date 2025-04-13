@@ -3,7 +3,6 @@ title: "05. 프로세스 동기화"
 date: 2023-07-06T21:35:03+09:00
 author: Sunghun Son
 summary: "버퍼에 여러 프로세스가 동시에 값을 넣는다면 어떻게 되는지 알아본다."
-keywords: ["os", "process", "concurrency", "critical section", "deadlock", "starvation", "semaphore", "monitor", "transactional memory", "openmp", "functional programming"]
 tags: []
 pin: false
 ---

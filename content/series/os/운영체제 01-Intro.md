@@ -3,11 +3,6 @@ title: "01. 서론"
 date: 2023-07-02T02:46:09+09:00
 author: Sunghun Son
 summary: 수많은 지식의 결정체, 운영체제의 역할과 구조를 알아보자.
-keywords:
-  - 운영체제
-  - OS
-  - 서론
-  - intro
 tags: []
 pin: false
 ---

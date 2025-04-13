@@ -1,5 +1,5 @@
 ---
-title: "지식의 파편"
+title: "Notes"
 aliases: []
 tags: []
 ---

@@ -3,7 +3,6 @@ title: "04. 스레드"
 date: 2023-07-05T17:11:46+09:00
 author: Sunghun Son
 summary: "CPU 이용의 기본 단위인 스레드에 대해 알아보자."
-keywords: ["os", "thread", "concurrency", "parallelism"]
 tags: []
 pin: false
 ---

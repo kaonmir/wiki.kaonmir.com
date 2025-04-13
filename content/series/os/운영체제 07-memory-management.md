@@ -3,7 +3,6 @@ title: "07. 메모리 관리"
 date: 2023-07-12T22:51:23+09:00
 author: Sunghun Son
 summary: "메모리 관리 기법을 알아보자."
-keywords: ["os", "memory", "management"]
 tags: []
 pin: false
 mermaid: false
