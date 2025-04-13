@@ -29,20 +29,20 @@ export const sharedPageComponents: SharedLayout = {
     // }),
     Component.ConditionalRender({
       component: Component.RecentNotes({
-        title: "Recent Notes",
-        limit: 6,
-        filter: (page) => page.slug !== "index" && (page.slug?.startsWith("notes") ?? false),
+        title: "Recent Posts",
+        limit: 4,
+        filter: (page) =>
+          (page.slug?.startsWith("posts") ?? false) || (page.slug?.startsWith("series") ?? false),
         sort: sortByModifiedDate,
         showTags: true,
       }),
       condition: (page) => page.fileData.slug === "index",
     }),
     Component.ConditionalRender({
-      component: Component.RecentNotes({
-        title: "Recent Posts",
-        limit: 4,
-        filter: (page) =>
-          (page.slug?.startsWith("posts") ?? false) || (page.slug?.startsWith("series") ?? false),
+      component: Component.RecentBlockNotes({
+        title: "Recent Notes",
+        limit: 40,
+        filter: (page) => page.slug !== "index" && (page.slug?.startsWith("notes") ?? false),
         sort: sortByModifiedDate,
         showTags: true,
       }),
