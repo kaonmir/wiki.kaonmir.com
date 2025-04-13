@@ -4,7 +4,7 @@ aliases: []
 tags: []
 ---
 주요 [[HTTP]] 응답 코드
-### 2Xx : 성공
+### 2xx : 성공
 | 응답코드        | 설명                     |
 | ----------- | ---------------------- |
 | 200 OK      | 일반적인 성공                |
@@ -40,5 +40,6 @@ tags: []
 - [[인증 vs 인가]]
 
 **References.**
-- .
+- [HTTP 상태 코드 - HTTP \| MDN](https://developer.mozilla.org/ko/docs/Web/HTTP/Reference/Status)
+- [HTTP/응답 코드 - 나무위키](https://namu.wiki/w/HTTP/%EC%9D%91%EB%8B%B5%20%EC%BD%94%EB%93%9C)
 

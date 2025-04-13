@@ -6,11 +6,9 @@ aliases:
 tags: []
 ---
 
-네트워크 통신에서 사용되는 실질적인 프로토콜 모음(스택), HTTP, TCP, IP 등이 여기에 속한다.
+네트워크 통신에서 사용되는 실질적인 프로토콜 모음(스택), [[HTTP]], [[TCP]], [[IP]] 등이 여기에 속한다.
 
 ![](https://i.imgur.com/itHy4ph.jpeg)
-참고 : [[OSI vs TCPIP|OSI vs TCP/IP]]
-
 ### L1: Network Access Layer
 
 - 데이터 단위 : 프레임
@@ -23,7 +21,7 @@ tags: []
 ### L2: Internet Layer
 
 - 데이터 단위 : 패킷
-- 전송 주소 : IP
+- 전송 주소 : [[IP 주소]]
 - 프로토콜 : [[IP]], [[ICMP]], [[ARP]]
 
 ### L3: Transport Layer
@@ -38,3 +36,7 @@ tags: []
 - 데이터 단위 : Data/Message
 - 전송 주소 : 프로토콜마다 다름
 - 프로토콜 : [[HTTP]], [[FTP]], [[SMTP]], [[DNS]], [[Telnet]]
+
+
+**See also.**
+- [[OSI vs TCPIP]]

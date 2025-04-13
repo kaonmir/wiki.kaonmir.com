@@ -28,3 +28,14 @@
     local("Pretendard SemiBold"),
     url("/static/font/Pretendard-SemiBold.woff2") format("woff2");
 }
+
+// 기본 스타일 초기화
+
+p {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+}

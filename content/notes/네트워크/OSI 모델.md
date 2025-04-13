@@ -12,5 +12,7 @@ Open Systems Interconnection Reference Model
 
 #보완 계층별로 하나씩 작성
 
+
+
 **See also.**
 - [[OSI vs TCPIP|OSI vs TCP/IP]]

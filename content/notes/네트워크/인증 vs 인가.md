@@ -10,7 +10,7 @@ tags: []
 
 **See also.**
 - [[RBAC]]
-- [[HTTP 주요 응답 코드]]
+- [[HTTP 상태 코드]]
 
 **References.**
 - [인증(Authentication)과 인가(Authorization)](https://velog.io/@aaronddy/%EC%9D%B8%EC%A6%9DAuthentication%EA%B3%BC-%EC%9D%B8%EA%B0%80Authorization)
