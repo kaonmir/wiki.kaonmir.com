@@ -3,7 +3,6 @@ import { FullSlug, SimpleSlug, resolveRelative } from "../util/path"
 import { QuartzPluginData } from "../plugins/vfile"
 import { byDateAndAlphabetical } from "./PageList"
 import style from "./styles/recentNotes.scss"
-import blockStyle from "./styles/recentBlockNotes.scss"
 import { Date, getDate } from "./Date"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
@@ -92,6 +91,6 @@ export default ((userOpts?: Partial<Options>) => {
     )
   }
 
-  RecentNotes.css = [style, blockStyle]
+  RecentNotes.css = style
   return RecentNotes
 }) satisfies QuartzComponentConstructor
