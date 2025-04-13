@@ -22,7 +22,7 @@ export const sharedPageComponents: SharedLayout = {
     Component.ConditionalRender({
       component: Component.RecentNotes({
         title: "Recent writing",
-        limit: 4,
+        limit: 8,
         filter: (page) => page.slug !== "index",
         showTags: true,
       }),
