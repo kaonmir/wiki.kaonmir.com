@@ -1,9 +1,8 @@
 ---
-title:
+title: 
 aliases:
   - OSI
-  - OSI 7 계층
-tags: []
+tags:
 ---
 Open Systems Interconnection Reference Model
 

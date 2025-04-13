@@ -1,10 +1,15 @@
 ---
-title: "Credly 배지로 깃헙 블로그 꾸미기"
+title: Credly 배지로 깃헙 블로그 꾸미기
 date: 2023-06-29T21:23:58+09:00
 author: Sunghun Son
 summary: Credly의 배지를 가져와 깃헙 블로그에 적용하는 방법을 소개합니다. 그리고 여러분의 블로그를 더 예쁘게 꾸밉니다.
-keywords: ["credly", "badge", "github", "hugo", "blog"]
-tags: ["기술"]
+keywords:
+  - credly
+  - badge
+  - github
+  - hugo
+  - blog
+tags: []
 pin: true
 cover: /post/2023-06-29-credly-badge/blog_main.png
 ---

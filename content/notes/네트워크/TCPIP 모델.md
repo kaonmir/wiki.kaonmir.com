@@ -14,7 +14,7 @@ tags: []
 ### L1: Network Access Layer
 
 - 데이터 단위 : 프레임
-- 전송 주소 : [[MAC]]
+- 전송 주소 : [[MAC 주소]]
 - 프로토콜 : [[Ethernet]], [[Wi-Fi]], [[PPP]]
 - OSI 모형 : 물리 계층
 

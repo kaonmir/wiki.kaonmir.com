@@ -21,14 +21,13 @@ tags: []
 | 응답코드                   | 설명                 |
 | ---------------------- | ------------------ |
 | 400 Bad Request        | 요청값을 잘못 넣은 경우      |
-| 401 Unauthorized       | 로그인이 필요한데 안하고 접근   |
-| [[403 Forbidden]]      | 로그인했지만 접근이 차단당함    |
+| 401 Unauthorized       | [[인증]] 오류          |
+| 403 Forbidden          | [[인가]] 오류          |
 | 404 Not Found          | 서버는 찾았으나 데이터 없음    |
 | 405 Method Not Allowed | 허용되지 않은 메소드        |
 | [[409 Conflict]]       | 사용자의 요청이 서버와 충돌    |
 | 429 Too Many Requests  | [[Rate Limit]]에 걸림 |
 
-- 그러면 [[401은 Unauthentication이고 403은 Unauthorization인가]]?
 ### 5xx : 서버 오류
 | 응답코드                      | 설명                          |
 | ------------------------- | --------------------------- |
@@ -37,6 +36,9 @@ tags: []
 | 504 Gateway Timeout       | [[게이트웨이]]가 연결된 서버로부터 응답 없음  |
 
 
+**See also.**
+- [[인증 vs 인가]]
 
-
+**References.**
+- .
 

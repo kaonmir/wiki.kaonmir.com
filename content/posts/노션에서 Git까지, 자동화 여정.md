@@ -1,12 +1,9 @@
 ---
-title: "노션에서 Git까지, 자동화 여정"
+title: 노션에서 Git까지, 자동화 여정
 date: 2023-07-04T06:35:30+09:00
 author: Sunghun Son
-summary: "최근 회사 블로그에서 왜, 그리고 어떻게 노션에서 작성한 글을 GitLab까지 자동으로 커밋하는지 설명했습니다. 이번 포스팅에서는 좀 더 디테일한 여정을 그려보려 합니다."
-keywords: ["노션", "GitLab", "자동화", "DevOps", "AWS Lambda", "AWS SAM", "서버리스"]
-tags: ["기술"]
-pin: true
-mermaid: true
+summary: 최근 회사 블로그에서 왜, 그리고 어떻게 노션에서 작성한 글을 GitLab까지 자동으로 커밋하는지 설명했습니다. 이번 포스팅에서는 좀 더 디테일한 여정을 그려보려 합니다.
+tags: []
 ---
 
 최근 회사 블로그 [내부 개발자 포털로 업무 자동화하기](https://insight.infograb.net/blog/2023/06/24/infograb-idp)에서 어떻게 노션에서 작성한 글을 GitLab까지 자동으로 커밋하는지 설명했습니다. 그리고 내부 개발자 포털의 필요성을 언급했죠. 노션이 대세가 된 지금, 정말 많은 사람들이 저와 같은 고민을 할 건데요. 이번 포스팅에서는 좀 더 디테일한 여정을 그려보려 합니다.
@@ -29,15 +26,14 @@ mermaid: true
 막상 이렇게 나열하니까 별 게 없어 보이지 않나요?
 
 ## 아키텍처
-
-{{< mermaid >}}
+```mermaid
 flowchart LR
     B[Handler] --> C[Usecase]
     C --> D[Component]
     D --> E[Service]
     C --> E
     D --> F[Data]
-{{</ mermaid >}}
+```
 
 ### Handler
 
@@ -51,7 +47,7 @@ flowchart LR
 
 처음 정리한 블로그 포스팅 프로세스는 아래 코드처럼 만들 수 있습니다.
 
-{{< highlight typescript >}}
+```typescript
 class PostBlogUsecase {
   run() {
     this.extractGitLabInfo(...)
@@ -69,7 +65,7 @@ class PostBlogUsecase {
   createIssueAndMR(...) {}
   commitAndPush(...) {}
 }
-{{</ highlight >}}
+```
 
 처음 작성한 프로세스와 판박이지 않나요? 아, **입력 검증하기**와 **Git 정보 가져오기**가 바뀐 것 같다면 착각이 아닙니다. 이슈나 풀 리퀘스트가 정상적인지를 검증하려면 미리 Git 정보를 가져와야 하기 때문에 조금 바꿨습니다.
 
@@ -83,7 +79,7 @@ class PostBlogUsecase {
 
 **노션에서 마크다운을 추출**하는 150줄 소스코드 가운데 핵심 부분을 소개합니다.
 
-{{< highlight typescript "hl_lines=2 7" >}}
+```typescript
 async exportCollection(blockId: string): Promise<string> {
   const { taskId } = await this.enqueueTaskExportCollection(blockId, this.spaceId);
   if (!taskId) throw new Error('Notion enqueueTaskExportCollection failed; taskId is undefined');
@@ -101,7 +97,7 @@ async exportCollection(blockId: string): Promise<string> {
     throw new Error('Notion exportCollection failed' + response.results);
   else return response.results[0].status.exportURL;
 }
-{{</ highlight >}}
+```
 
 ### Component
 
@@ -125,7 +121,7 @@ async exportCollection(blockId: string): Promise<string> {
 
 ## 유스케이스 클래스 다이어그램
 
-{{< mermaid >}}
+```mermaid
 classDiagram
   direction RL
   class Usecase~Properties~{
@@ -166,8 +162,7 @@ classDiagram
   }
 
   BlogFactory --> Usecase
-
-{{</ mermaid >}}
+```
 
 위 그림은 유스케이스를 설계한 클래스 다이어그램입니다. 그림이 조금 복잡하죠? 팩토리 패턴을 사용해 클래스를 설계했는데요. 디자인 패턴이 익숙하지 않으신 분들은 [팩토리 메서드 패턴](https://refactoring.guru/ko/design-patterns/factory-method)을 참고해주시기 바랍니다.
 
@@ -187,7 +182,7 @@ classDiagram
 
 핸들러를 코드로 표현하면 아래와 같습니다.
 
-{{< highlight typescript "hl_lines=8-10" >}}
+```typescript
 export const handler = async (event) => {
   // 입력값 검사
   const actionType = ... // POST or UPDATE
@@ -201,7 +196,7 @@ export const handler = async (event) => {
     .then(() => new Response('Succeeded!'))
     .catch((e) => new Response('Failed!'));
 };
-{{</ highlight >}}
+```
 
 ## 마치며
 
