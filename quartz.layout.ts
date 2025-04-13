@@ -1,5 +1,13 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { QuartzPluginData } from "./quartz/plugins/vfile"
+
+const sortByModifiedDate = (a: QuartzPluginData, b: QuartzPluginData) => {
+  if (a.dates?.modified && b.dates?.modified) {
+    return new Date(b.dates.modified).getTime() - new Date(a.dates.modified).getTime()
+  }
+  return 0
+}
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -24,6 +32,7 @@ export const sharedPageComponents: SharedLayout = {
         title: "Recent notes",
         limit: 6,
         filter: (page) => page.slug !== "index" && (page.slug?.startsWith("notes") ?? false),
+        sort: sortByModifiedDate,
         showTags: true,
       }),
       condition: (page) => page.fileData.slug === "index",
@@ -34,6 +43,7 @@ export const sharedPageComponents: SharedLayout = {
         limit: 4,
         filter: (page) =>
           (page.slug?.startsWith("posts") ?? false) || (page.slug?.startsWith("series") ?? false),
+        sort: sortByModifiedDate,
         showTags: true,
       }),
       condition: (page) => page.fileData.slug === "index",
