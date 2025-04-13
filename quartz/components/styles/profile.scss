@@ -92,14 +92,14 @@
 
     .profile-fullname {
       display: block;
-      font-size: 24px;
+      font-size: 1.5em;
       font-weight: 600;
       color: var(--color-fg-default);
       margin: 0;
     }
 
     .profile-bio {
-      font-size: 16px;
+      font-size: 1em;
       color: var(--color-fg-default);
       line-height: 1.5;
       margin: 0;
@@ -119,9 +119,10 @@
   .profile-detail-item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5em;
     // margin-bottom: 12px;
     color: var(--color-fg-default);
+    line-height: 1.5em;
 
     &:last-child {
       margin-bottom: 0;
@@ -129,20 +130,20 @@
   }
 
   .profile-icon {
-    width: 16px;
-    height: 16px;
+    width: 0.9em;
+    height: 0.9em;
     fill: var(--color-fg-muted);
   }
 
   .profile-detail-text {
-    font-size: 14px;
+    font-size: 0.9em;
   }
 
   .profile-email,
   .profile-link {
     color: var(--color-accent-fg);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.9em;
 
     &:hover {
       text-decoration: underline;
@@ -150,7 +151,7 @@
   }
 
   .profile-section-title {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 600;
     color: var(--color-fg-default);
     margin: 24px 0 16px;
@@ -249,7 +250,7 @@
   }
 
   .profile-experience-position {
-    font-size: 14px;
+    font-size: 0.9em;
     font-weight: 600;
     color: var(--color-fg-default);
     margin: 0;
@@ -257,7 +258,7 @@
 
   .profile-experience-company {
     display: block;
-    font-size: 12px;
+    font-size: 0.8em;
     // color: var(--color-accent-fg);
     color: var(--color-fg-muted);
     text-decoration: none;
@@ -265,7 +266,7 @@
   }
 
   .profile-experience-duration {
-    font-size: 12px;
+    font-size: 0.8em;
     color: var(--color-fg-muted);
   }
 

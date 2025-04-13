@@ -30,6 +30,13 @@
 }
 
 // 기본 스타일 초기화
+html {
+  font-size: 15px;
+}
+
+a {
+  font-weight: 400;
+}
 
 p {
   margin-bottom: 0;
@@ -38,4 +45,5 @@ p {
 ul,
 ol {
   margin-top: 0;
+  padding-left: 25px;
 }
