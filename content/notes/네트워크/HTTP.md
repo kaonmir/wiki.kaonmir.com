@@ -24,5 +24,5 @@ tags:
 **See also.**
 - [[HTTP 상태 코드]]
 
-**References.**
+**Sources.**
 - .

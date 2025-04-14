@@ -11,7 +11,7 @@ Port Address Translation
 **See also.**
 - [[NAT vs PAT vs 포트포워딩]]
 
-**References.**
+**Sources.**
 - Type here
 
 

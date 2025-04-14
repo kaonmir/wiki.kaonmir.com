@@ -27,7 +27,7 @@ Demilitarized Zone
 **See also.**
 - Type here
 
-**References.**
+**Sources.**
 - [DMZ 이란 무엇이고 어떻게 활용하는가?](https://m.blog.naver.com/innoviss/222246852119)
 - [\[백엔드 핵심\] #1.2 포워드 프록시, 리버스 프록시](https://velog.io/@wogud7587/%EB%B0%B1%EC%97%94%EB%93%9C-%ED%95%9C%EB%B0%94%ED%80%B4-1.2-WAS%EC%99%80-WS)
 - [프록시 서버(Proxy Server)와 DMZ 서버](https://juran-devblog.tistory.com/228)

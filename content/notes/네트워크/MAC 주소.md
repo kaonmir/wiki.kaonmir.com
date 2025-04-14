@@ -19,7 +19,7 @@ Media Access Control Address
 **See also.**
 - [[MAC 스푸핑]]
 
-**References.**
+**Sources.**
 
 
 

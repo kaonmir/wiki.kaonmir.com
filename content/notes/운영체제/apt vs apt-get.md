@@ -11,5 +11,5 @@ Dockerfile 같은 script 파일에서 apt를 사용하면, `WARNING: apt does no
 
 apt 명령어는 사용자와의 상호작용에 중점을 둔 CLI고, script내에서는 사용하기에는 주의가 필요하다는 것이므로, apt-get을 이용해서 사용한다.
 
-**References.**
+**Sources.**
 - [리눅스 패키지 비교 - 민한의 블로그](https://minhan2.tistory.com/entry/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%B9%84%EA%B5%90aptdpkgyumrpm)

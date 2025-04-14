@@ -15,7 +15,7 @@ tags: []
 - [[SVN]]
 - [[Git vs GitHub]]
 
-**References.**
+**Sources.**
 - [Git](https://git-scm.com/)
 
 

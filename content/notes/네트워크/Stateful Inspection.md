@@ -13,7 +13,7 @@ tags:
 **See also.**
 - Type here
 
-**References.**
+**Sources.**
 - [03화 방화벽-3 (Stateful 트래픽 처리방식)](https://brunch.co.kr/@ka3211/5)
 
 

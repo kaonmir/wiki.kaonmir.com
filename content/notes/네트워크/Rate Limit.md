@@ -25,5 +25,5 @@ tags: []
 **See also.**
 - .
 
-**References.**
+**Sources.**
 - [처리율 제한 장치](https://kaonmir.notion.site/ratelimit?pvs=4)

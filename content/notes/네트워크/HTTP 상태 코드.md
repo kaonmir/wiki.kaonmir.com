@@ -39,7 +39,7 @@ tags: []
 **See also.**
 - [[인증 vs 인가]]
 
-**References.**
+**Sources.**
 - [HTTP 상태 코드 - HTTP \| MDN](https://developer.mozilla.org/ko/docs/Web/HTTP/Reference/Status)
 - [HTTP/응답 코드 - 나무위키](https://namu.wiki/w/HTTP/%EC%9D%91%EB%8B%B5%20%EC%BD%94%EB%93%9C)
 

@@ -14,6 +14,6 @@ tags: []
 
 **See also.**
 
-**References.**
+**Sources.**
 - [409 Conflict - HTTP \| MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/409)
 - [HTTP 409 Conflict 에러란? 원인 및 해결방법](https://earscoming.tistory.com/entry/server-HTTP-409-Conflict-%EC%97%90%EB%9F%AC%EB%9E%80-%EC%84%A4%EB%AA%85-%EB%B0%8F-%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95)
