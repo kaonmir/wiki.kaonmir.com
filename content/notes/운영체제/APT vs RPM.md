@@ -12,8 +12,8 @@ tags: []
 | ----------- | --------------------------------- | ---------- |
 | 저수준 패키지 매니저 | dpkg                              | rpm        |
 | 고수준 패키지 매니저 | [[apt vs apt-get\|apt-get / apt]] | yum        |
-### 꼬꼬무
+**See also.**
 - [[데비안 vs 레드햇]]
 - [[apt vs apt-get]]
-### 출처
+**References.**
 - [리눅스 패키지 비교(apt,dpkg,yum,rpm)](https://minhan2.tistory.com/entry/%EB%A6%AC%EB%88%85%EC%8A%A4-%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%B9%84%EA%B5%90aptdpkgyumrpm)
