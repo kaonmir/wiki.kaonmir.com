@@ -29,17 +29,25 @@
     url("/static/font/Pretendard-SemiBold.woff2") format("woff2");
 }
 
-// 기본 스타일 초기화
+// typography improvements
 html {
   font-size: 15px;
 }
 
-a {
-  font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin-bottom: 0rem;
 }
 
-p {
-  margin-bottom: 0em;
+a {
+  font-weight: 400;
 }
 
 ul,
@@ -56,4 +64,9 @@ a.no-link {
   &:hover {
     color: var(--text-error-hover);
   }
+}
+
+// Content Style Improvements
+h1.article-title {
+  margin-bottom: 1rem;
 }
