@@ -3,11 +3,13 @@ title:
 aliases: []
 tags: []
 ---
-왜 필요한지 적자
+Port Address Translation
 
+
+#보완 
 
 **See also.**
-- Type here
+- [[NAT vs PAT vs 포트포워딩]]
 
 **References.**
 - Type here
