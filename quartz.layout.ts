@@ -40,9 +40,9 @@ export const sharedPageComponents: SharedLayout = {
     }),
     Component.ConditionalRender({
       component: Component.RecentBlockNotes({
-        title: "Recent Notes",
+        title: "Recent Thoughts",
         limit: 40,
-        filter: (page) => page.slug !== "index" && (page.slug?.startsWith("notes") ?? false),
+        filter: (page) => page.slug !== "index" && (page.slug?.startsWith("questions") ?? false),
         sort: sortByModifiedDate,
         showTags: true,
       }),
