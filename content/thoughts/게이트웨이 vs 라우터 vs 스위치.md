@@ -1,7 +1,8 @@
 ---
-title:
-aliases: []
-tags: []
+title: 
+aliases: 
+tags:
+  - vs
 ---
 요즘 공유기는 스위치, 게이트웨이, 라우터 기능이 모두 결합된 장치입니다.
 

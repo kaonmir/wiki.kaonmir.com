@@ -1,7 +1,8 @@
 ---
-title:
-aliases: []
-tags: []
+title: 
+aliases: 
+tags:
+  - seed
 ---
 Demilitarized Zone
 
@@ -21,7 +22,7 @@ Demilitarized Zone
 | 외부      | X   | O   | -   |
 
 ### 특이사항
-- [[WAS]]는 DB와 결부되어있기 때문에 내부 네트워크에 둔다. 그리고 DMZ에 리버스 프록시를 둬 WAS를 감춘다. 보통 web 애플리케이션 안에 프록시를 직접 구현하는 듯
+- WAS는 DB와 결부되어있기 때문에 내부 네트워크에 둔다. 그리고 DMZ에 리버스 프록시를 둬 WAS를 감춘다. 보통 web 애플리케이션 안에 프록시를 직접 구현하는 듯
 
 
 **See also.**

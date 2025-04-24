@@ -1,7 +1,8 @@
 ---
-title:
-aliases: []
-tags: []
+title: 
+aliases: 
+tags:
+  - vs
 ---
 패키지 메타데이터나 의존성 처리 방법, 배포판의 철학 때문에 분화가 되었다.
 

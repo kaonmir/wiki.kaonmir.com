@@ -1,7 +1,8 @@
 ---
-title:
+title: 
 aliases: 
-tags: 
+tags:
+  - vs
 ---
 
 **커널은 운영체제의 한 부분**이다
