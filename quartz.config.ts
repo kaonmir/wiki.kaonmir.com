@@ -17,8 +17,8 @@ const config: QuartzConfig = {
     },
     locale: "ko-KR",
     baseUrl: "wiki.kaonmir.com",
-    ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    ignorePatterns: ["private", "templates", ".obsidian", "_template.md"],
+    defaultDateType: "published",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,

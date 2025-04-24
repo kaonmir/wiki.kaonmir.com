@@ -1,13 +1,5 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import { QuartzPluginData } from "./quartz/plugins/vfile"
-
-const sortByModifiedDate = (a: QuartzPluginData, b: QuartzPluginData) => {
-  if (a.dates?.modified && b.dates?.modified) {
-    return new Date(b.dates.modified).getTime() - new Date(a.dates.modified).getTime()
-  }
-  return 0
-}
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -27,15 +19,16 @@ export const sharedPageComponents: SharedLayout = {
     //     categoryId: "DIC_kwDOOXoGJM4CpCif",
     //   },
     // }),
-    Component.ConditionalRender({
-      component: Component.RecentNotes({
-        title: "Recent Posts",
-        limit: 4,
-        sort: sortByModifiedDate,
-        showTags: false,
+    Component.MobileOnly(
+      Component.ConditionalRender({
+        component: Component.RecentNotes({
+          title: "Recent Posts",
+          limit: 4,
+          showTags: false,
+        }),
+        condition: (page) => page.fileData.slug === "index",
       }),
-      condition: (page) => page.fileData.slug === "index",
-    }),
+    ),
   ],
   footer: Component.Footer({
     links: {
@@ -68,9 +61,15 @@ export const defaultContentPageLayout: PageLayout = {
     //     { Component: Component.Darkmode() },
     //   ],
     // }),
-    Component.Explorer({
-      useSavedState: true,
-    }),
+    // Component.Explorer({
+    //   useSavedState: true,
+    // }),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        limit: 10,
+        showTags: false,
+      }),
+    ),
   ],
   right: [
     Component.Graph(),
@@ -98,7 +97,13 @@ export const defaultListPageLayout: PageLayout = {
     //     { Component: Component.Darkmode() },
     //   ],
     // }),
-    Component.Explorer(),
+    // Component.Explorer(),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        limit: 10,
+        showTags: false,
+      }),
+    ),
   ],
   right: [],
 }
