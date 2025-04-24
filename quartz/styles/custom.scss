@@ -1,72 +1,43 @@
 @use "./base.scss";
 
-/* Pretendard 폰트 대신 시스템 폰트를 사용합니다 */
-
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 400;
-  font-display: swap;
-  src:
-    local("Pretendard Regular"),
-    url("/static/font/Pretendard-Regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 700;
-  font-display: swap;
-  src:
-    local("Pretendard Bold"),
-    url("/static/font/Pretendard-Bold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Pretendard";
-  font-weight: 600;
-  font-display: swap;
-  src:
-    local("Pretendard SemiBold"),
-    url("/static/font/Pretendard-SemiBold.woff2") format("woff2");
-}
-
 // typography improvements
 html {
   font-size: 15px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol {
-  margin-bottom: 0rem;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// ul,
+// ol {
+//   margin-bottom: 0rem;
+// }
 
-a {
-  font-weight: 400;
-}
+// a {
+//   font-weight: 400;
+// }
 
-ul,
-ol {
-  margin-top: 0.3em;
-  padding-left: 25px;
-}
+// ul,
+// ol {
+//   margin-top: 0.3em;
+//   padding-left: 25px;
+// }
 
-a.no-link {
-  color: var(--link-unresolved-color);
-  opacity: var(--link-unresolved-opacity);
-  filter: var(--link-unresolved-filter);
+// a.no-link {
+//   color: var(--link-unresolved-color);
+//   opacity: var(--link-unresolved-opacity);
+//   filter: var(--link-unresolved-filter);
 
-  &:hover {
-    color: var(--text-error-hover);
-  }
-}
+//   &:hover {
+//     color: var(--text-error-hover);
+//   }
+// }
 
-// Content Style Improvements
-h1.article-title {
-  margin-bottom: 1rem;
-}
+// // Content Style Improvements
+// h1.article-title {
+//   margin-bottom: 1rem;
+// }

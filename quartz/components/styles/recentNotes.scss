@@ -6,58 +6,19 @@
 
   & > ul.recent-ul {
     list-style: none;
-    margin-top: 0.3rem;
+    margin-top: 1rem;
     padding-left: 0;
 
     & > li {
-      // margin: 0.5rem 0;
-      .desc {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 2rem;
-
-        font-weight: 400;
-
-        p {
-          margin: 0;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          overflow: hidden;
-        }
-      }
+      margin: 1rem 0;
       .section > .desc > h3 > a {
         background-color: transparent;
       }
 
       .section > .meta {
-        // margin: 0 0 0.5rem 0;
+        margin: 0 0 0.5rem 0;
         opacity: 0.6;
       }
     }
-
-    .tags {
-      display: flex;
-      margin: 0;
-      padding: 0;
-      flex-wrap: nowrap;
-    }
-  }
-}
-
-.title {
-  margin: 0;
-}
-
-.recent-block-ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style: none;
-
-  & > li:not(:last-child)::after {
-    content: "|";
-    margin: 0 0.2rem;
-    color: #ccc;
   }
 }

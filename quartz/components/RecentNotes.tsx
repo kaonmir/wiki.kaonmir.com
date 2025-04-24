@@ -47,34 +47,31 @@ export default ((userOpts?: Partial<Options>) => {
               <li class="recent-li">
                 <div class="section">
                   <div class="desc">
-                    <p>
+                    <h3>
                       <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
                         {title}
                       </a>
-                    </p>
-                    {/* <p class="meta">
-                      <Date date={getDate(cfg, page)!} locale={cfg.locale} />
-                    </p> */}
-                    {opts.showTags && (
-                      <ul class="tags">
-                        {tags.slice(0, 1).map((tag) => (
-                          <li>
-                            <a
-                              class="internal tag-link"
-                              href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
-                            >
-                              {tag}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
+                    </h3>
                   </div>
-                  {/* {page.dates && (
+                  {page.dates && (
                     <p class="meta">
                       <Date date={getDate(cfg, page)!} locale={cfg.locale} />
                     </p>
-                  )} */}
+                  )}
+                  {opts.showTags && (
+                    <ul class="tags">
+                      {tags.map((tag) => (
+                        <li>
+                          <a
+                            class="internal tag-link"
+                            href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
+                          >
+                            {tag}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </li>
             )

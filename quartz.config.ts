@@ -17,30 +17,27 @@ const config: QuartzConfig = {
     },
     locale: "ko-KR",
     baseUrl: "wiki.kaonmir.com",
-    ignorePatterns: ["private", "template", ".obsidian", "inbox", "_template.md"],
-    defaultDateType: "published",
+    ignorePatterns: ["private", "templates", ".obsidian"],
+    defaultDateType: "modified",
     theme: {
-      fontOrigin: "local",
+      fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Pretendard",
-        body: "Pretendard",
-        code: "Pretendard",
+        header: "Schibsted Grotesk",
+        body: "Source Sans Pro",
+        code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
           light: "#faf8f8",
           lightgray: "#e5e5e5",
           gray: "#b8b8b8",
-
-          darkgray: "#24292f", // good
-          dark: "#24292f", // good
-          secondary: "#086DDD", // good
-
+          darkgray: "#4e4e4e",
+          dark: "#2b2b2b",
+          secondary: "#284b63",
           tertiary: "#84a59d",
-
           highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "rgba(255, 208, 0, 0.4)", // good
+          textHighlight: "#fff23688",
         },
         darkMode: {
           light: "#161618",
@@ -51,7 +48,7 @@ const config: QuartzConfig = {
           secondary: "#7b97aa",
           tertiary: "#84a59d",
           highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "rgba(255, 208, 0, 0.4)", // good
+          textHighlight: "#b3aa0288",
         },
       },
     },
@@ -86,7 +83,7 @@ const config: QuartzConfig = {
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
       Plugin.FolderPage(),
-      Plugin.TagPage({}),
+      Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,

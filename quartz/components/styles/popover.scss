@@ -25,8 +25,8 @@
 
   & > .popover-inner {
     position: relative;
-    width: 20rem;
-    max-height: 10rem;
+    width: 30rem;
+    max-height: 20rem;
     padding: 0 1rem 1rem 1rem;
     font-weight: initial;
     font-style: initial;
@@ -35,7 +35,7 @@
     font-family: var(--bodyFont);
     border: 1px solid var(--lightgray);
     background-color: var(--light);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 6px 6px 36px 0 rgba(0, 0, 0, 0.25);
     overflow: auto;
     overscroll-behavior: contain;
