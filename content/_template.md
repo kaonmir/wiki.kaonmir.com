@@ -1,6 +1,6 @@
 ---
-title: 
-aliases: 
+title:
+aliases:
 tags:
-  - seed
+  - 씨앗
 ---
