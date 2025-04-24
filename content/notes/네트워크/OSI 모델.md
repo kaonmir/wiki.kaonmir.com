@@ -15,4 +15,4 @@ Open Systems Interconnection Reference Model
 
 
 **See also.**
-- [[OSI vs TCPIP|OSI vs TCP\/IP]]
+- [[OSI vs TCPIP|OSI vs TCP/IP]]
