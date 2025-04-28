@@ -1,5 +1,10 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { QuartzPluginData } from "./quartz/plugins/vfile"
+
+const recentNotesFilter = (page: QuartzPluginData) => {
+  return !(page.frontmatter?.tags ?? [])?.includes("상록수") && page.slug !== "index"
+}
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -25,6 +30,7 @@ export const sharedPageComponents: SharedLayout = {
           title: "Recent Posts",
           limit: 4,
           showTags: false,
+          filter: recentNotesFilter,
         }),
         condition: (page) => page.fileData.slug === "index",
       }),
@@ -68,6 +74,7 @@ export const defaultContentPageLayout: PageLayout = {
       Component.RecentNotes({
         limit: 10,
         showTags: false,
+        filter: recentNotesFilter,
       }),
     ),
   ],
@@ -102,6 +109,7 @@ export const defaultListPageLayout: PageLayout = {
       Component.RecentNotes({
         limit: 10,
         showTags: false,
+        filter: recentNotesFilter,
       }),
     ),
   ],
