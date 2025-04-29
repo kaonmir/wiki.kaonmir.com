@@ -72,4 +72,4 @@ CPU 아키텍처마다 레지스터의 구성이 달라요. 여기서는 x86 32b
     - F Segment (FS)
     - G Segment (GS): 
 - 1 Flags Register
-- Instruction Pointer: 보통 **Program Counter(PC)**라 불리는 그것
+- Instruction Pointer: 보통 **Program Counter(PC)** 라 불리는 그것
