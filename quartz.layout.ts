@@ -3,7 +3,11 @@ import * as Component from "./quartz/components"
 import { QuartzPluginData } from "./quartz/plugins/vfile"
 
 const recentNotesFilter = (page: QuartzPluginData) => {
-  return !(page.frontmatter?.tags ?? [])?.includes("상록수") && page.slug !== "index"
+  return (
+    !(page.frontmatter?.tags ?? [])?.includes("상록수") && // 상록수 페이지 무시
+    page.slug !== "index" && // 메인 페이지 무시
+    !page.slug?.startsWith("tags") // 태그 무시
+  )
 }
 
 // components shared across all pages
@@ -56,17 +60,17 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    // Component.PageTitle(),
+    Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    // Component.Flex({
-    //   components: [
-    //     {
-    //       Component: Component.Search(),
-    //       grow: true,
-    //     },
-    //     { Component: Component.Darkmode() },
-    //   ],
-    // }),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+      ],
+    }),
     // Component.Explorer({
     //   useSavedState: true,
     // }),
@@ -79,7 +83,11 @@ export const defaultContentPageLayout: PageLayout = {
     ),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      globalGraph: {
+        showTags: false,
+      },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -93,17 +101,17 @@ export const defaultListPageLayout: PageLayout = {
     Component.ContentMeta(),
   ],
   left: [
-    // Component.PageTitle(),
+    Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    // Component.Flex({
-    //   components: [
-    //     {
-    //       Component: Component.Search(),
-    //       grow: true,
-    //     },
-    //     { Component: Component.Darkmode() },
-    //   ],
-    // }),
+    Component.Flex({
+      components: [
+        {
+          Component: Component.Search(),
+          grow: true,
+        },
+        { Component: Component.Darkmode() },
+      ],
+    }),
     // Component.Explorer(),
     Component.DesktopOnly(
       Component.RecentNotes({
