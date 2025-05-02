@@ -2,7 +2,7 @@
 title:
 aliases:
 tags:
-  - 씨앗
+  - 가지
 ---
 
 
@@ -19,7 +19,8 @@ tags:
 4. **Heap Area**
     - 동적 할당(malloc)으로 사용자가 직접 관리하는 영역입니다.
 
-![](https://i.imgur.com/Yu4rVcV.png)
+
+![](https://i.imgur.com/IvWl9js.png)
 
 ## Storage Class
 Storage class는 변수의 수명과 범위, 가시성을 정의하는 지정자입니다. 변수를 어디에 저장할지 얼마나 유지할지, 어떻게 접근할지 방법을 정합니다.
