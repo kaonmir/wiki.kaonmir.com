@@ -60,7 +60,7 @@ Heap과 GC의 동작은 [[JVM#Heap]]에 잘 설명되어 있습니다. 스택과
 - **Old Generation(Old Space)**: New Space에서 GC되지 않고 살아남은 객체
     - **Old Pointer Space** : 다른 객체를 참조하는 객체
     - **Old Data Space**: 데이터만 가지는 객체
-- **Large Object Space**:  Old Space의 일부로 간주되며 큰 객체(주로 128KB 이상[^4])를 저장. [[#mmap]] 메모리 영역에 할당됩니다. GC는 불필요한 객체를 삭제하되 객체를 이동하지는 않습니다.
+- **Large Object Space**:  큰 객체(주로 128KB 이상[^4]). [[#mmap]] 메모리 영역에 할당됩니다. GC는 불필요한 객체를 삭제하되 객체를 이동하지는 않습니다.
 - **Code Space**: [[#V8]] 터보팬이 컴파일한 코드
 - **Cell/Property Cell/Map Space**: 각각 Cell, PropertyCell, Map 객체를 저장
     - **Cell**: 숫자, bool, null 등 자주 참조되지만 단순한 타입의 전역 변수, 상수 등
