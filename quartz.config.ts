@@ -92,6 +92,7 @@ const config: QuartzConfig = {
       }),
       Plugin.Assets(),
       Plugin.Static(),
+      Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // CustomOgImages 플러그인은 프로덕션 환경에서만 활성화
       ...(process.env.NODE_ENV === "production" ? [Plugin.CustomOgImages()] : []),

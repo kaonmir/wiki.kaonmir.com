@@ -29,7 +29,6 @@ function getComponentResources(ctx: BuildCtx): ComponentResources {
   const allComponents: Set<QuartzComponent> = new Set()
   for (const emitter of ctx.cfg.plugins.emitters) {
     const components = emitter.getQuartzComponents?.(ctx) ?? []
-
     for (const component of components) {
       allComponents.add(component)
     }
@@ -129,14 +128,8 @@ function addGlobalPageResources(ctx: BuildCtx, componentResources: ComponentReso
       const umamiScript = document.createElement("script");
       umamiScript.src = "${cfg.analytics.host ?? "https://analytics.umami.is"}/script.js";
       umamiScript.setAttribute("data-website-id", "${cfg.analytics.websiteId}");
-      umamiScript.setAttribute("data-auto-track", "false");
+      umamiScript.setAttribute("data-auto-track", "true");
       umamiScript.defer = true;
-      umamiScript.onload = () => {
-        umami.track();
-        document.addEventListener("nav", () => {
-          umami.track();
-        });
-      };
 
       document.head.appendChild(umamiScript);
     `)

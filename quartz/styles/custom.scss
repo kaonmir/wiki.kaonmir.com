@@ -27,7 +27,7 @@ ol {
   padding-left: 25px;
 }
 
-p:has(+ ul) {
+article p:has(+ ul) {
   margin-bottom: 0em;
 }
 
