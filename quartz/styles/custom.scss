@@ -21,11 +21,15 @@ html {
 //   font-weight: 400;
 // }
 
-// ul,
-// ol {
-//   margin-top: 0.3em;
-//   padding-left: 25px;
-// }
+ul,
+ol {
+  margin-top: 0.3em;
+  padding-left: 25px;
+}
+
+p:has(+ ul) {
+  margin-bottom: 0em;
+}
 
 // a.no-link {
 //   color: var(--link-unresolved-color);
