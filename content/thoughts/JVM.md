@@ -2,11 +2,11 @@
 title: 
 aliases: 
 tags:
-  - 씨앗
+  - 가지
 ---
 [[C언어]]에 이어 JVM이 어떻게 동작하는지 알아보겠습니다. ([참고](https://velog.io/@sgwon1996/JAVA%EC%9D%98-%EB%8F%99%EC%9E%91-%EC%9B%90%EB%A6%AC%EC%99%80-JVM-%EA%B5%AC%EC%A1%B0))
 
-Java Virtual Machine(JVM)은 추상 컴퓨팅 머신입니다. 실제 컴퓨팅 머신과 마친가지로 [명령어 집합](https://namu.wiki/w/%EB%AA%85%EB%A0%B9%EC%96%B4%20%EC%A7%91%ED%95%A9)을 가지고 있고, 런타임에 메모리 영역을 조작합니다.
+Java Virtual Machine(JVM)은 추상 컴퓨팅 머신입니다. 실제 컴퓨팅 머신과 마친가지로 [명령어 집합](https://wonit.tistory.com/589)을 가지고 있고, 런타임에 메모리 영역을 조작합니다.
 
 > To implement the Java Virtual Machine correctly, you need only be able to read the `class` file format and correctly perform the operations specified therein.
 > 
